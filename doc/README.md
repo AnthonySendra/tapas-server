@@ -80,3 +80,16 @@ tapas.entryPoint(Users)
 
 tapas.listen()
 ```
+
+```
+// EntryPoints/Default.js
+export const read (id, attributes, with, next) {}
+export const subscribe (id, attributes, with, next) {}
+export const write (id, attributes, with, next) {}
+
+// index.js
+import Default from '../EntryPoints/Default'
+tapas.default(Default)
+
+tapas.listen
+```
