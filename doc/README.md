@@ -1,5 +1,17 @@
 # Tapas Server
 
+## Init
+
+```
+let tapas = new require('tapas')()
+tapas.listen()
+```
+
+```
+let tapas = new require('tapas')('websocket', {port: 8080})
+tapas.listen()
+```
+
 ## Read
 
 ```
@@ -59,11 +71,6 @@ import Comments from '../EntryPoints/Comments'
 
 tapas.entryPoint(Articles, Comments)
 
-tapas.listen()
-```
-
-```
-let tapas = new require('tapas')('websocket', {port: 8080})
 tapas.listen()
 ```
 
